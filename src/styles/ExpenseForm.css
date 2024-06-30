@@ -1,0 +1,83 @@
+/* ExpenseForm.css */
+
+.expense-form-container {
+  width: calc(40% - 20px); /* Adjust width as needed */
+  float: left; /* Align to the left */
+  margin-right: 20px;
+}
+
+.expense-form {
+  width: 40%; /* Full width within the container */
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #f0f0f0; /* Light text */
+}
+
+.expense-form h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  color: orange; /* Light text */
+  margin-bottom: 30px;
+}
+
+.expense-form label {
+  margin-top: 20px;
+  display: block;
+  font-size: 1rem;
+  color: #ffffff; /* Lighter text */
+  margin-bottom: 28px;
+}
+
+.expense-form input[type="text"],
+.expense-form input[type="number"],
+.expense-form select {
+  width: calc(100% - 16px); /* Adjust input width */
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #333; /* Darker input background */
+  color: #de7e11; /* Light text */
+}
+
+.expense-form input:hover[type="text"],
+.expense-form input:hover[type="number"],
+.expense-form select:hover {
+  width: calc(100% - 16px); /* Adjust input width */
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Darker input background */
+  color: #000000; /* Light text */
+}
+
+.expense-form button {
+  background-color: #ff8c00; /* Orange button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.expense-form button:hover {
+  color: #e67800; /* Darker orange on hover */
+  background-color: #000000;
+  border-color: #e67800;
+}
+
+.expense-form button:disabled {
+  background-color: #f10505; /* Darker disabled state */
+  cursor: not-allowed;
+}
